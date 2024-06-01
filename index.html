@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nz__aviation's OG Website</title>
+    <title>Old Version | nz-aviation.com</title>
     <link rel = "icon" href =  
 "https://ugc.production.linktr.ee/1c498ef5-341f-4e98-a200-9c9507c17fad_IMG-3985.jpeg?io=true&size=avatar-v1_0" 
         type = "image/x-icon">
@@ -88,7 +88,7 @@
     </nav>
 
     <nav>
-        <h3>This website is not updated, please visit my <a href="https://www.nz-aviation.com"><u>new website</u></a>.</h3>
+        <h3>This website is not updated, please visit my <a href="https://www.nz-aviation.com">new website</a>.</h3>
     </nav>
 
     <main>
@@ -145,9 +145,15 @@
     </main>
 
     <footer>
-        <h3>&copy; 2023 nz__aviation. All rights reserved.<h3>
+        <h3>&copy; 2022 - <span id="currentYear"></span> Jack Palmer. All rights reserved.<h3>
         <a href="https://www.nz-aviation.com">New Website (Updated!)</a>
     </footer>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+            var yearElement = document.getElementById('currentYear');
+            var currentYear = new Date().getFullYear();
+            yearElement.textContent = currentYear;
+        });
+</script>
 </body>
 </html>
